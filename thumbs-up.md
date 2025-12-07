@@ -4,6 +4,7 @@ Last updated: 2025-12-07
 
 | Document | 👍 | 👎 | Score | Last Feedback |
 |----------|----|----|-------|---------------|
+| examples/getting-started.md | 1 | 0 | 100.0% | 2025-12-07 |
 | docs/TESTING.md | 0 | 1 | 0.0% | 2025-12-07 |
 
 ## Needs Attention
