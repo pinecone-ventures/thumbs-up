@@ -23,7 +23,9 @@
     "test:unit": "jest tests/unit || node test/core.test.js",
     "test:integration": "node test/integration.test.js",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "setup:labels": "node scripts/setup-labels.js",
+    "debug:issues": "node scripts/debug-issues.js"
   },
   "repository": {
     "type": "git",

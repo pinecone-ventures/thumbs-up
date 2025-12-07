@@ -34,6 +34,16 @@ async function fetchFeedbackIssues(options) {
 
     console.log(`Found ${response.data.length} feedback issues`);
 
+    // Debug: Log first few issues
+    if (response.data.length > 0) {
+      console.log('Sample issue:', JSON.stringify({
+        id: response.data[0].id,
+        title: response.data[0].title,
+        labels: response.data[0].labels,
+        body: response.data[0].body ? response.data[0].body.substring(0, 100) : null
+      }, null, 2));
+    }
+
     // Normalize to match fixture format
     const normalizedIssues = response.data.map(issue => ({
       id: issue.id,

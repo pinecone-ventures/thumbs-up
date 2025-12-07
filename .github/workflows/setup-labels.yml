@@ -1,0 +1,29 @@
+name: Setup Feedback Labels
+
+on:
+  workflow_dispatch:  # Manual trigger only
+
+permissions:
+  issues: write
+
+jobs:
+  setup-labels:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Setup labels
+        run: npm run setup:labels
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
