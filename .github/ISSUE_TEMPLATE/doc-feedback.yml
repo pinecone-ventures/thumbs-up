@@ -1,0 +1,38 @@
+name: 📄 Documentation Feedback
+description: Submit feedback about documentation quality
+title: "Feedback: [DOC_PATH] "
+labels: ["doc-feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for providing feedback on our documentation!
+
+  - type: input
+    id: doc-path
+    attributes:
+      label: Document Path
+      description: Which document are you providing feedback for?
+      placeholder: docs/api-reference.md
+    validations:
+      required: true
+
+  - type: dropdown
+    id: sentiment
+    attributes:
+      label: Feedback
+      description: How would you rate this documentation?
+      options:
+        - 👍 Helpful
+        - 👎 Needs improvement
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes (Optional)
+      description: Any specific feedback or suggestions?
+      placeholder: What could be improved?
+    validations:
+      required: false

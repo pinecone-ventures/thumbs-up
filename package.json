@@ -1,0 +1,49 @@
+{
+  "name": "thumbs-up",
+  "version": "1.0.0",
+  "description": "GitHub-native documentation feedback system using Issues as a backend. Zero infrastructure, < 2 minute installation.",
+  "keywords": [
+    "documentation",
+    "feedback",
+    "github",
+    "github-actions",
+    "markdown",
+    "docs",
+    "developer-tools",
+    "doc-quality",
+    "issues"
+  ],
+  "main": "src/index.js",
+  "scripts": {
+    "dashboard": "node src/cli/build-dashboard.js",
+    "build:dashboard": "node src/cli/build-dashboard.js",
+    "build:mock": "node src/cli/build-dashboard.js --mock",
+    "widget": "node src/cli/generate-widget.js",
+    "test": "jest",
+    "test:unit": "jest tests/unit || node test/core.test.js",
+    "test:integration": "node test/integration.test.js",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pinecone-ventures/thumbs-up.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pinecone-ventures/thumbs-up/issues"
+  },
+  "homepage": "https://github.com/pinecone-ventures/thumbs-up#readme",
+  "author": "Greg",
+  "license": "MIT",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@octokit/rest": "^20.0.0",
+    "dotenv": "^16.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
