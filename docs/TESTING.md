@@ -729,3 +729,7 @@ When contributing:
 ---
 
 **Questions?** [Open an issue](../../issues/new) or check the [main docs](../README.md).
+
+<!-- FEEDBACK -->
+[👍 This doc was helpful](../../issues/new?labels=doc-feedback,thumbs-up&title=Feedback:+docs%2FTESTING.md+👍&body=Doc:+docs%2FTESTING.md)
+[👎 This doc needs work](../../issues/new?labels=doc-feedback,thumbs-down&title=Feedback:+docs%2FTESTING.md+👎&body=Doc:+docs%2FTESTING.md)
