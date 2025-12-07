@@ -30,8 +30,10 @@ function validatePath(path) {
 function generateWidget(docPath) {
   const encodedPath = encodeForURL(docPath);
 
-  const thumbsUpLink = `../../issues/new?labels=doc-feedback,thumbs-up&title=Feedback:+${encodedPath}+👍&body=Doc:+${encodedPath}`;
-  const thumbsDownLink = `../../issues/new?labels=doc-feedback,thumbs-down&title=Feedback:+${encodedPath}+👎&body=Doc:+${encodedPath}`;
+  // Use protocol-relative GitHub URLs that work from anywhere in the repo
+  // Format: https://github.com/OWNER/REPO/issues/new
+  const thumbsUpLink = `https://github.com/pinecone-ventures/thumbs-up/issues/new?labels=doc-feedback,thumbs-up&title=Feedback:+${encodedPath}+👍&body=Doc:+${encodedPath}`;
+  const thumbsDownLink = `https://github.com/pinecone-ventures/thumbs-up/issues/new?labels=doc-feedback,thumbs-down&title=Feedback:+${encodedPath}+👎&body=Doc:+${encodedPath}`;
 
   return `<!-- FEEDBACK -->
 [👍 This doc was helpful](${thumbsUpLink})

@@ -56,5 +56,5 @@ All feedback is stored as GitHub Issues with the `doc-feedback` label. You can:
 ---
 
 <!-- FEEDBACK -->
-[👍 This doc was helpful](../../issues/new?labels=doc-feedback,thumbs-up&title=Feedback:+examples/getting-started.md+👍&body=Doc:+examples/getting-started.md)
-[👎 This doc needs work](../../issues/new?labels=doc-feedback,thumbs-down&title=Feedback:+examples/getting-started.md+👎&body=Doc:+examples/getting-started.md)
+[👍 This doc was helpful](https://github.com/pinecone-ventures/thumbs-up/issues/new?labels=doc-feedback,thumbs-up&title=Feedback:+examples%2Fgetting-started.md+👍&body=Doc:+examples%2Fgetting-started.md)
+[👎 This doc needs work](https://github.com/pinecone-ventures/thumbs-up/issues/new?labels=doc-feedback,thumbs-down&title=Feedback:+examples%2Fgetting-started.md+👎&body=Doc:+examples%2Fgetting-started.md)

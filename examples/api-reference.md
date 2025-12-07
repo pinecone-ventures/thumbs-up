@@ -37,8 +37,8 @@ The CLI outputs a ready-to-paste Markdown snippet:
 
 ```markdown
 <!-- FEEDBACK -->
-[👍 This doc was helpful](../../issues/new?labels=doc-feedback,thumbs-up&title=Feedback:+ENCODED_PATH+👍&body=Doc:+ENCODED_PATH)
-[👎 This doc needs work](../../issues/new?labels=doc-feedback,thumbs-down&title=Feedback:+ENCODED_PATH+👎&body=Doc:+ENCODED_PATH)
+[👍 This doc was helpful](https://github.com/OWNER/REPO/issues/new?labels=doc-feedback,thumbs-up&title=Feedback:+ENCODED_PATH+👍&body=Doc:+ENCODED_PATH)
+[👎 This doc needs work](https://github.com/OWNER/REPO/issues/new?labels=doc-feedback,thumbs-down&title=Feedback:+ENCODED_PATH+👎&body=Doc:+ENCODED_PATH)
 ```
 
 #### URL Encoding
@@ -133,5 +133,5 @@ thumbs-up/
 ---
 
 <!-- FEEDBACK -->
-[👍 This doc was helpful](../../issues/new?labels=doc-feedback,thumbs-up&title=Feedback:+examples/api-reference.md+👍&body=Doc:+examples/api-reference.md)
-[👎 This doc needs work](../../issues/new?labels=doc-feedback,thumbs-down&title=Feedback:+examples/api-reference.md+👎&body=Doc:+examples/api-reference.md)
+[👍 This doc was helpful](https://github.com/pinecone-ventures/thumbs-up/issues/new?labels=doc-feedback,thumbs-up&title=Feedback:+examples%2Fapi-reference.md+👍&body=Doc:+examples%2Fapi-reference.md)
+[👎 This doc needs work](https://github.com/pinecone-ventures/thumbs-up/issues/new?labels=doc-feedback,thumbs-down&title=Feedback:+examples%2Fapi-reference.md+👎&body=Doc:+examples%2Fapi-reference.md)
